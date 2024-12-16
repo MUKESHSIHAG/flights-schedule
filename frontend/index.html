@@ -28,7 +28,7 @@
             resultsDiv.innerHTML = '';
 
             try {
-                const response = await fetch(`http://127.0.0.1:8000/flights?airport_code=${airportCode}`);
+                const response = await fetch(`https://flights-api-g256.onrender.com/flights?airport_code=${airportCode}`);
                 const data = await response.json();
                 if (data.success) {
                     let table = '<table class="table table-bordered"><thead><tr class="bg-secondary"><th>Country</th><th># of Flights</th></tr></thead><tbody>';
